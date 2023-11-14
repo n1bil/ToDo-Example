@@ -1,4 +1,4 @@
-package com.example.appexample.entity;
+package com.example.appexample.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,12 +9,11 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ToDo {
-
+public class ToDoDtoResponse {
     private Integer id;
     private String title;
     private String description;
     private LocalDateTime creationDate;
-    private User author;
+    private Integer userId;
 
 }
