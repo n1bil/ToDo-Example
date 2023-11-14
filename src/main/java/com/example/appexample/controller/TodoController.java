@@ -40,7 +40,7 @@ public class TodoController {
         return new ResponseEntity<>(todos, HttpStatus.OK);
     }
 
-    @GetMapping("/{todoId}")
+    @GetMapping("/todo/{todoId}")
     public ResponseEntity<ToDoDtoResponse> findToDoById(@PathVariable Integer todoId) {
         ToDoDtoResponse todo = service.findById(todoId);
 

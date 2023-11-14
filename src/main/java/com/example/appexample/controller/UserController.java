@@ -33,7 +33,7 @@ public class UserController {
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
-    @GetMapping("/")
+    @GetMapping("/user")
     public ResponseEntity<UserDtoResponse> findUserByEmail(@RequestParam String email) {
         UserDtoResponse foundUser = service.findUserByEmail(email);
 
