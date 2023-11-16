@@ -49,7 +49,7 @@ public class UserServiceImpl {
             User savedUser = userRepository.save(newUser);
             return converters.converterFromUserToResponse(savedUser);
         } else {
-            throw new IsAlreadyExistException("Manager with email: " + request.getEmail() + " is already exist!");
+            throw new IsAlreadyExistException("User with email: " + request.getEmail() + " is already exist!");
         }
     }
 
